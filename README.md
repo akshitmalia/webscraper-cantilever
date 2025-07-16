@@ -10,6 +10,11 @@ It scrapes book data from a sample e-commerce website and displays it through a 
 - Displays the scraped data using a Flask web app
 - Real-time search bar to filter books by title
 
+## Data Source
+
+This project uses data from [http://books.toscrape.com](http://books.toscrape.com), a public sandbox website built specifically for practicing web scraping.
+
+
 ## Technologies Used
 - Python 3.13
 - Requests
