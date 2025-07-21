@@ -1,26 +1,27 @@
 # Web Scraper with Flask Interface
 
-This project was built as part of the Cantilever Cybersecurity Internship (Task 1).
+This project was developed as part of the Cantilever Cybersecurity Internship (Task 1).
 
-It scrapes book data from a sample e-commerce website and displays it through a searchable web interface.
+It scrapes book data from a demo e-commerce website ([books.toscrape.com](http://books.toscrape.com)) and displays it on a user-friendly web interface with search functionality.
+
+---
 
 ## Features
-- Extracts book title, price, and rating
+- Scrapes book **title, price, and rating**
 - Stores the data in a CSV file (`books.csv`)
-- Displays the scraped data using a Flask web app
-- Real-time search bar to filter books by title
+- Displays the scraped data in a web interface built using Flask
+- Provides real-time filtering using a search bar
 
-## Data Source
-
-This project uses data from [http://books.toscrape.com](http://books.toscrape.com), a public sandbox website built specifically for practicing web scraping.
-
+---
 
 ## Technologies Used
 - Python 3.13
+- Flask
 - Requests
 - BeautifulSoup4
 - Pandas
-- Flask
+
+---
 
 ## Project Structure
 webscraper-cantilever/
@@ -30,18 +31,40 @@ webscraper-cantilever/
 ├── templates/
 │ └── index.html
 ├── static/
+└── venv/ (not pushed to GitHub)
 
 
-## How to Run
-1. Open terminal and navigate to the project folder
-2. Run the scraper script:
+---
+
+## How to Run (Step-by-Step)
+
+1. **Open Command Prompt** and navigate to the project folder:
+cd path\to\webscraper-cantilever
+
+2. **Create a virtual environment**:
+python -m venv venv
+
+3. **Activate the virtual environment**:
+venv\Scripts\activate
+
+4. **Install required packages**:
+pip install flask pandas requests beautifulsoup4
+
+5. **Run the scraper to collect book data**:
 python scraper.py
-3. Start the Flask web server:
+
+6. **Start the Flask server**:
 python app.py
-4. Open the browser and go to:
+
+7. **Open browser and go to**:
 http://127.0.0.1:5000/
 
 
-## Note
-This project demonstrates how publicly available data can be collected and why implementing rate limits and scraping protection is essential in web applications.
+---
+
+## Notes
+- The 'venv' folder is excluded from the repository using '.gitignore'.
+- The scraper uses only publicly available test data from books.toscrape.com.
+
+
 
